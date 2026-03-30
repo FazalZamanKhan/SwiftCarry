@@ -1,0 +1,180 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f7;
+  color: #1f2937;
+}
+
+.app-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.topbar {
+  background: #ffffff;
+  border: 1px solid #d9deea;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.tab {
+  border: 1px solid #cfd7e7;
+  background: #ffffff;
+  color: #1f2937;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tab.active {
+  background: #dbeafe;
+  border-color: #93c5fd;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #d9deea;
+  padding: 14px;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+label {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+input,
+select,
+button {
+  font-size: 14px;
+  border: 1px solid #cdd6e6;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+  background: #111827;
+  color: #fff;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.row-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 10px;
+}
+
+.mini-card,
+.order-card {
+  border: 1px solid #d9deea;
+  border-radius: 10px;
+  padding: 12px;
+  display: grid;
+  gap: 6px;
+  background: #fafbfd;
+}
+
+.offer-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.negotiation-panel {
+  border-top: 1px dashed #d7deeb;
+  padding-top: 8px;
+  display: grid;
+  gap: 8px;
+}
+
+.banner-wrap {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.banner {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+.error {
+  color: #b00020;
+}
+
+.success {
+  color: #0d7a37;
+}
+
+.warning {
+  color: #8a5b00;
+}
+
+.timer {
+  color: #0b4f8a;
+  font-weight: 600;
+}
+
+.muted {
+  color: #5b6475;
+  font-size: 13px;
+}
+
+@media (max-width: 920px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+}

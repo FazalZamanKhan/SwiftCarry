@@ -1,0 +1,82 @@
+[
+  {
+    "id": "R101",
+    "location": "Islamabad",
+    "lat": 33.6844,
+    "lng": 73.0479,
+    "available": true,
+    "speed": 72,
+    "rating": 4.7,
+    "completed_deliveries": 41
+  },
+  {
+    "id": "R102",
+    "location": "Lahore",
+    "lat": 31.5204,
+    "lng": 74.3587,
+    "available": true,
+    "speed": 70,
+    "rating": 4.5,
+    "completed_deliveries": 33
+  },
+  {
+    "id": "R103",
+    "location": "Karachi",
+    "lat": 24.8607,
+    "lng": 67.0011,
+    "available": true,
+    "speed": 75,
+    "rating": 4.6,
+    "completed_deliveries": 29
+  },
+  {
+    "id": "R104",
+    "location": "Peshawar",
+    "lat": 34.0151,
+    "lng": 71.5249,
+    "available": false,
+    "speed": 66,
+    "rating": 4.1,
+    "completed_deliveries": 20
+  },
+  {
+    "id": "R105",
+    "location": "Faisalabad",
+    "lat": 31.4504,
+    "lng": 73.135,
+    "available": true,
+    "speed": 68,
+    "rating": 4.4,
+    "completed_deliveries": 27
+  },
+  {
+    "id": "R106",
+    "location": "Rawalpindi",
+    "lat": 33.5651,
+    "lng": 73.0169,
+    "available": true,
+    "speed": 69,
+    "rating": 4.2,
+    "completed_deliveries": 24
+  },
+  {
+    "id": "R107",
+    "location": "Multan",
+    "lat": 30.1575,
+    "lng": 71.5249,
+    "available": true,
+    "speed": 73,
+    "rating": 4.8,
+    "completed_deliveries": 46
+  },
+  {
+    "id": "R108",
+    "location": "Quetta",
+    "lat": 30.1798,
+    "lng": 66.975,
+    "available": false,
+    "speed": 64,
+    "rating": 4.0,
+    "completed_deliveries": 18
+  }
+]

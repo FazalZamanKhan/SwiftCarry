@@ -1,0 +1,16 @@
+# Node
+node_modules/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local data/artifacts
+backend/data/courier.db
+
+# OS/editor
+.DS_Store
+.vscode/
