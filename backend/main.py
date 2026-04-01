@@ -471,6 +471,9 @@ def serialize_order(conn: sqlite3.Connection, order_row: sqlite3.Row) -> dict[st
     offer_deadline = order_row["offer_deadline_at"]
     negotiation_deadline = order_row["negotiation_deadline_at"]
 
+    latest_rider_offer = next((offer for offer in offers_rows if offer["type"] == "rider_offer"), None)
+    latest_user_counter = next((entry for entry in log_rows if entry["actor"] == "user" and entry["amount"]), None)
+
     return {
         "order_id": order_row["order_id"],
         "user_id": order_row["user_id"],
@@ -500,6 +503,15 @@ def serialize_order(conn: sqlite3.Connection, order_row: sqlite3.Row) -> dict[st
             }
             for entry in log_rows
         ],
+        "latest_rider_offer": serialize_offer(latest_rider_offer) if latest_rider_offer else None,
+        "latest_user_counter": {
+            "amount": latest_user_counter["amount"],
+            "target_rider_id": latest_user_counter["target_rider_id"],
+            "message": latest_user_counter["message"],
+            "timestamp": latest_user_counter["created_at"],
+        }
+        if latest_user_counter
+        else None,
         "created_at": order_row["created_at"],
         "completed_at": order_row["completed_at"],
     }
